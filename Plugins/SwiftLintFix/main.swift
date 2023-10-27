@@ -22,8 +22,6 @@ struct MyCommandPlugin: CommandPlugin {
             process.executableURL = toolUrl
             process.arguments = [
                 "--fix",
-                "--config",
-                "\(context.package.directory.string)/.swiftlint.yml",
                 "\(target.directory)"
             ]
 
